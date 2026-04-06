@@ -27,8 +27,6 @@ public class UserController {
         return userService.getAllUsers();
     }
 
-    // In a real application, we'd use DTOs for requests to hold separate fields. 
-    // Here we use query params for a quick Admin testing endpoint.
     @PostMapping
     @PreAuthorize("hasRole('ADMIN')")
     @ResponseStatus(HttpStatus.CREATED)

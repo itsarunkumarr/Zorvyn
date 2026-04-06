@@ -18,5 +18,4 @@ public class DashboardSummary {
     private BigDecimal netBalance;
     private Map<String, BigDecimal> incomeByCategory;
     private Map<String, BigDecimal> expensesByCategory;
-    // We could use FinancialRecord for recentActivity, but it's better to decouple. We'll use the entity directly for simplicity in this assessment, or create a quick record DTO.
 }

@@ -25,7 +25,7 @@ public class UserService {
     @Transactional
     public User createUser(String username, String rawPassword, Role role) {
         if (userRepository.findByUsername(username).isPresent()) {
-            throw new RuntimeException("Username already exists"); // Use custom exception ideally
+            throw new RuntimeException("Username already exists");
         }
 
         User user = User.builder()
