@@ -1,0 +1,15 @@
+# Maven build folder
+target/
+
+# Compiled class files
+*.class
+
+# Logs
+*.log
+
+# IntelliJ files
+.idea/
+*.iml
+
+# OS files
+.DS_Store
