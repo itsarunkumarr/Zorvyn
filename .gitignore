@@ -10,6 +10,12 @@ target/
 # IntelliJ files
 .idea/
 *.iml
+.vscode/
 
 # OS files
 .DS_Store
+
+# Database
+data/
+*.db
+*.mv.db

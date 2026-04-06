@@ -31,7 +31,6 @@ public class DataSeeder implements CommandLineRunner {
             userService.createUser("viewer", "viewer123", Role.VIEWER);
             log.info("Users seeded: admin (ADMIN), analyst (ANALYST), viewer (VIEWER)");
 
-            // Seed some financial records
             recordService.createRecord(FinancialRecordRequest.builder()
                     .amount(new BigDecimal("5000.00"))
                     .transactionType(TransactionType.INCOME)
